@@ -1,0 +1,13 @@
+{% extends 'mainApp/wrapper.html' %}
+
+{% block content %}
+<div class="post">
+      {% if news.date %}
+          <div class="date">
+              {{ news.date }}
+          </div>
+      {% endif %}
+      <h1>{{ news.title }}</h1>
+      <p>{{ news.post }}</p>
+  </div>
+{% endblock %}

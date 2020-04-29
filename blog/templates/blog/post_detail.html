@@ -1,0 +1,13 @@
+{% extends 'mainApp/wrapper.html' %}
+
+{% block content %}
+<div class="post container">
+      {% if post.published_date %}
+          <div class="date">
+              {{ post.published_date }}
+          </div>
+      {% endif %}
+      <h1>{{ post.title }}</h1>
+      <p class='lead text-break'>{{ post.text|linebreaksbr }}</p>
+  </div>
+{% endblock %}
